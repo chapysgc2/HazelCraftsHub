@@ -1,11 +1,19 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import imagen1 from "../../../public/images/imagenf.jpeg";
+import imagen2 from "../../../public/images/project5.jpeg";
+import imagen3 from "../../../public/images/gemini.png";
+import imagen4 from "../../../public/images/project4.jpg";
 
-interface CarouselProps {
-    images: string[];
-}
+const images = [
+    { src: imagen1, description: 'Description for image 1' },
+    { src: imagen2, description: 'Description for image 2' },
+    { src: imagen3, description: 'Description for image 3' },
+    { src: imagen4, description: 'Description for image 4' },
+];
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+const Carousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isVisible, setIsVisible] = useState(true);
 
@@ -28,14 +36,11 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
             const sectionHeight = carouselSection.offsetHeight;
             const sectionBottom = sectionTop + sectionHeight;
 
-            // Calcula el punto en el que el carousel debe comenzar a desaparecer
-            // Puedes ajustar este valor según tus preferencias
-            const bottomThreshold = window.innerHeight / 3; // Por ejemplo, desaparece cuando el 50% de la ventana haya pasado
+            const bottomThreshold = window.innerHeight / 3;
 
             const isPassedCarousel = window.pageYOffset + bottomThreshold > sectionBottom;
             setIsVisible(!isPassedCarousel);
         };
-
 
         window.addEventListener('scroll', handleScroll);
 
@@ -51,7 +56,14 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
     return (
         <div id="gallery" className="relative w-full max-w-screen-lg mx-auto" data-carousel="slide">
+
+            <h1 className="text-4xl font-italic mb-4" style={{ wordWrap: "break-word" }}>
+                Descubre nuestras tecnologias
+            </h1>
+
+
             <motion.div
+
                 className="relative h-56 overflow-hidden rounded-lg md:h-96"
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: isVisible ? 0 : -100, opacity: isVisible ? 1 : 0 }}
@@ -63,13 +75,14 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
                         className={`absolute w-full h-full top-0 left-0 transition-opacity duration-500 ${index === currentIndex ? 'opacity-100' : 'opacity-0'
                             }`}
                     >
-                        <img
-                            src={image}
+                        <Image
+                            src={image.src}
                             alt={`Slide ${index + 1}`}
                             className="w-full h-full rounded-lg object-cover"
                         />
 
-
+                        {/* Mostrar la descripción correspondiente a cada imagen */}
+                        <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2">{image.description}</div>
                     </div>
                 ))}
             </motion.div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ContactLinks from '../ContactLinks/ContactLinks';
 const Footer = () => {
   return (
     <footer className="bg-white">
@@ -54,6 +54,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <ContactLinks/>
+
         <div className="border-t border-gray-200 my-8"></div>
         <p className="text-sm text-gray-600">Más formas de comprar: Busca un Apple Store o un distribuidor cerca de ti. O llama al 001‑800‑692‑7753.</p>
         <p className="text-sm text-gray-600 mt-4">México</p>
@@ -71,9 +73,12 @@ const Footer = () => {
               </a>
             </li>
           </ul>
+          
         </div>
+
       </div>
     </footer>
+
   );
 };
 

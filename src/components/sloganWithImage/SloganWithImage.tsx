@@ -48,7 +48,9 @@ const SloganWithImage = () => {
       >
         <h1 className="text-4xl font-semibold mb-4">Potenciando tu negocio con herramientas digitales</h1>
         <p className="text-gray-600">Descripción adicional si es necesaria.</p>
+      
       </motion.div>
+      
       <motion.div
         className="ml-8 rounded-lg overflow-hidden"
         initial={{ y: -100, opacity: 0 }}
@@ -63,7 +65,13 @@ const SloganWithImage = () => {
           objectFit="cover"
         />
       </motion.div>
+
+      
     </div>
+
+  
+
+    
   );
 };
 

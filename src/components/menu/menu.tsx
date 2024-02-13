@@ -30,6 +30,27 @@ const Menu: React.FC = () => {
             <p className="text-gray-600">Descripción de la tarjeta 3.</p>
           </div>
         </div>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+          <img src="https://via.placeholder.com/300" alt="Placeholder" className="w-full h-40 object-cover rounded-t-lg" />
+          <div className="p-4">
+            <h3 className="text-lg font-semibold mb-2">Tarjeta 3</h3>
+            <p className="text-gray-600">Descripción de la tarjeta 3.</p>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+          <img src="https://via.placeholder.com/300" alt="Placeholder" className="w-full h-40 object-cover rounded-t-lg" />
+          <div className="p-4">
+            <h3 className="text-lg font-semibold mb-2">Tarjeta 3</h3>
+            <p className="text-gray-600">Descripción de la tarjeta 3.</p>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+          <img src="https://via.placeholder.com/300" alt="Placeholder" className="w-full h-40 object-cover rounded-t-lg" />
+          <div className="p-4">
+            <h3 className="text-lg font-semibold mb-2">Tarjeta 3</h3>
+            <p className="text-gray-600">Descripción de la tarjeta 3.</p>
+          </div>
+        </div>
       </div>
     </section>
   );
