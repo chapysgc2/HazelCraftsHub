@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../../components/navbar";
-import Menu from "../../components/tecnologias/tecnologias";
+import Navbar from "../../components/navbar/navbar";
+import Tecnologias from "../../components/tecnologias/tecnologias";
 import Gallery from "hazel/components/gallery/gallery";
 import Carousel from "hazel/components/carousel/Carousel";
 import Footer from "hazel/components/footer/footer";
@@ -16,11 +16,16 @@ const Home: React.FC = () => {
       <br />
       <SloganWithImage />
       <br />
+      <br />
+      <br />
       <Carousel />
       <br />
       <br />
+      <br />
       <Gallery />
-      <Menu />
+      <br />
+      <br /><br />
+      <Tecnologias />
       <br />
       <br />
       <br />

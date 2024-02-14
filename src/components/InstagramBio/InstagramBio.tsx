@@ -34,13 +34,11 @@ const InstagramBio: React.FC = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Experiencia laboral */}
             {/* Experiencia laboral */}
             <div className="mb-6">
                 <h3 className="font-semibold text-lg mb-2">Experiencia laboral</h3>
                 <div className="mb-4">
-                    <h4 className="font-semibold">Desarrollador de aplicaciones móviles</h4>
+                    <h4 className="font-semibold">Desarrollador de aplicaciones móviles - IOS</h4>
                     <p className="italic">Agosto 2023 – Actualmente</p>
                     <p>Grupo Salina -  Ciudad de México</p>
                 </div>
@@ -50,7 +48,7 @@ const InstagramBio: React.FC = () => {
                     <p>Prograpp - Chihuahua</p>
                 </div>
                 <div className="mb-4">
-                    <h4 className="font-semibold">Desarrollador de aplicaciones móviles</h4>
+                    <h4 className="font-semibold">Desarrollador de aplicaciones móviles - IOS</h4>
                     <p className="italic">Agosto 2022 - Julio 2023</p>
                     <p>Banregio - Monterrey</p>
                 </div>

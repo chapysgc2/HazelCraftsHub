@@ -61,10 +61,9 @@ const Carousel: React.FC = () => {
                 Descubre nuestras tecnologias
             </h1>
 
-
+            {/* Agregar el className isVisible para controlar la visibilidad */}
             <motion.div
-
-                className="relative h-56 overflow-hidden rounded-lg md:h-96"
+                className={`relative h-56 overflow-hidden rounded-lg md:h-96 ${isVisible ? "isVisible" : ""}`}
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: isVisible ? 0 : -100, opacity: isVisible ? 1 : 0 }}
                 transition={{ duration: 0.5 }}

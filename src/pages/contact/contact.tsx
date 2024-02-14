@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from 'hazel/components/navbar';
+import Navbar from 'hazel/components/navbar/navbar';
 import Footer from 'hazel/components/footer/footer';
 import InstagramBio from 'hazel/components/InstagramBio/InstagramBio';
 
@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
         <div>
             <Navbar />
             <br /><br />
-            <InstagramBio/>
+            <InstagramBio />
             <br />
             <br />
             <br /><br /><br /><br></br>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Tecnologias: React.FC = () => {
   return (
-    <section className="container mx-auto py-8">
+    <section className="container mx-auto py-8" style={{ marginTop: '60px' }}> {/* Agregar margen superior para dejar espacio para el navbar */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Tarjeta Desarrollo Móvil - iOS */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
@@ -12,7 +12,7 @@ const Tecnologias: React.FC = () => {
             <p className="text-gray-600">Construimos aplicaciones iOS atractivas y de alto rendimiento que ofrecen una experiencia de usuario excepcional. Desde aplicaciones móviles para consumidores hasta soluciones empresariales, nuestro equipo experto en desarrollo de iOS se encarga de cada detalle para garantizar el éxito de tu proyecto.</p>
           </div>
         </div>
-        
+
         {/* Tarjeta Desarrollo Móvil - Android */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
           <img src="https://via.placeholder.com/300" alt="Android Development" className="w-full h-40 object-cover rounded-t-lg" />
@@ -39,7 +39,7 @@ const Tecnologias: React.FC = () => {
             <p className="text-gray-600">Construimos sistemas escalables y flexibles utilizando la arquitectura de microservicios, permitiéndote agregar nuevas funcionalidades de manera eficiente y escalar vertical u horizontalmente según las demandas del negocio. Nuestra experiencia en microservicios garantiza una arquitectura robusta y adaptable.</p>
           </div>
         </div>
-        
+
         {/* Tarjeta Metodología Ágil - Scrum */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
           <img src="https://via.placeholder.com/300" alt="Scrum" className="w-full h-40 object-cover rounded-t-lg" />

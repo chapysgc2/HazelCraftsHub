@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from 'hazel/components/navbar';
+import Navbar from 'hazel/components/navbar/navbar';
 import Footer from 'hazel/components/footer/footer';
 import EnviarFormulario from '../../components/Forms/enviarFormulario';
 

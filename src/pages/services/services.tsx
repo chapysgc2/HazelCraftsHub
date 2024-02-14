@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from 'hazel/components/navbar';
+import Navbar from 'hazel/components/navbar/navbar';
 import Footer from 'hazel/components/footer/footer';
 import Servicios from 'hazel/components/servicios/servicios';
 const Services: React.FC = () => {
   return (
     <div>
-<Navbar />
+      <Navbar />
       <br />
       <br />
       <br />
