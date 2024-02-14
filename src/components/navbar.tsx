@@ -1,17 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from 'next/router'; // Importa el hook useRouter
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 const Navbar: React.FC = () => {
   const router = useRouter(); // Inicializa el hook useRouter
+  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const [visible, setVisible] = useState<boolean>(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible]);
 
   // Función para manejar la navegación a la página de servicios
   const navigateToServices = async () => {
     await router.push('/services/services'); // Redirecciona al usuario a la ruta /services
   };
-
 
   const navigateToCotizacion = async () => {
     await router.push('/cotizacion/cotizacion'); // Redirecciona al usuario a la ruta /services
@@ -21,15 +32,10 @@ const Navbar: React.FC = () => {
     await router.push('/contact/contact'); // Redirecciona al usuario a la ruta /services
   };
 
-  
-  
-
-
-
   return (
-    <nav className="bg-white">
+    <nav className={`bg-white fixed top-0 w-full transition-all duration-300 ${visible ? "py-4" : "py-0"}`}>
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between">
           <Link href="/home/home">
             <div className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image
@@ -62,10 +68,10 @@ const Navbar: React.FC = () => {
                 <button onClick={navigateToServices} className={`block py-2 px-3 ${router.pathname === "/services" ? "text-white bg-blue-700" : "text-gray-900"} rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500`} aria-current={router.pathname === "/services" ? "page" : undefined}>Servicios</button>
               </li>
               <li>
-              <button onClick={navigateToCotizacion} className={`block py-2 px-3 ${router.pathname === "/services" ? "text-white bg-blue-700" : "text-gray-900"} rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500`} aria-current={router.pathname === "/services" ? "page" : undefined}>Cotización</button>
+                <button onClick={navigateToCotizacion} className={`block py-2 px-3 ${router.pathname === "/services" ? "text-white bg-blue-700" : "text-gray-900"} rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500`} aria-current={router.pathname === "/services" ? "page" : undefined}>Cotización</button>
               </li>
               <li>
-              <button onClick={navigateToContact} className={`block py-2 px-3 ${router.pathname === "/services" ? "text-white bg-blue-700" : "text-gray-900"} rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500`} aria-current={router.pathname === "/services" ? "page" : undefined}>Contacto</button>
+                <button onClick={navigateToContact} className={`block py-2 px-3 ${router.pathname === "/services" ? "text-white bg-blue-700" : "text-gray-900"} rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500`} aria-current={router.pathname === "/services" ? "page" : undefined}>Contacto</button>
               </li>
             </ul>
           </div>

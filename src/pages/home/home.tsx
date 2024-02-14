@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar";
-import Menu from "../../components/menu/menu";
+import Menu from "../../components/tecnologias/tecnologias";
 import Gallery from "hazel/components/gallery/gallery";
 import Carousel from "hazel/components/carousel/Carousel";
 import Footer from "hazel/components/footer/footer";

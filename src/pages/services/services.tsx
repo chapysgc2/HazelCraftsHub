@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'hazel/components/navbar';
-import Menu from 'hazel/components/menu/menu';
 import Footer from 'hazel/components/footer/footer';
+import Servicios from 'hazel/components/servicios/servicios';
 const Services: React.FC = () => {
   return (
     <div>
@@ -11,7 +11,7 @@ const Services: React.FC = () => {
       <br />
       <br />
       <br />
-      <Menu />
+      <Servicios />
       <br />
       <br />
       <br />
