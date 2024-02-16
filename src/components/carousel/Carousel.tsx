@@ -7,11 +7,12 @@ import imagen3 from "../../../public/images/setup.jpg";
 import imagen4 from "../../../public/images/background.png";
 
 const images = [
-    { src: imagen1, description: 'Description for image 1' },
-    { src: imagen2, description: 'Description for image 2' },
-    { src: imagen3, description: 'Description for image 3' },
-    { src: imagen4, description: 'Description for image 4' },
+    { src: imagen1, description: 'Potenciado por Gemini' },
+    { src: imagen2, description: 'APIs de OpenIA de primera clase' },
+    { src: imagen3, description: 'Instalaciones de calidad superior' },
+    { src: imagen4, description: 'Equipo altamente confiable' },
 ];
+
 
 const Carousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

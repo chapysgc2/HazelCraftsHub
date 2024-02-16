@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'; // Importa Image de Next.js
-import profileImage from '../../../public/images/profile.jpg'; // Importa la imagen local
+import profileImage from '../../../public/images/profile.jpg.jpg'; // Importa la imagen local
 import ContactLinks from 'hazel/components/ContactLinks/ContactLinks';
 import { FaPhoneAlt } from 'react-icons/fa';
 

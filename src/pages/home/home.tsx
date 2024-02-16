@@ -20,11 +20,8 @@ const Home: React.FC = () => {
       <br />
       <Carousel />
       <br />
-      <br />
-      <br />
-      <Gallery />
-      <br />
       <br /><br />
+      <br />
       <Tecnologias />
       <br />
       <br />
