@@ -50,7 +50,7 @@ const Footer = () => {
         <ContactLinks />
 
         <div className="border-t border-gray-200 my-8"></div>
-        <p className="text-sm text-gray-600">Más formas: Busca un Bite Soft cerca de ti. O llama al 9541451671.</p>
+        <p className="text-sm text-gray-600">Llama al 9541451671.</p>
         <p className="text-sm text-gray-600 mt-4">México</p>
         <p className="text-sm text-gray-600">Copyright © 2024 Bite Soft Inc. Todos los derechos reservados.</p>
         <div className="flex justify-center items-center mt-6">

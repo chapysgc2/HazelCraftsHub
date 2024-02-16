@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import React from "react";
 import Image from "next/image";
 import GoogleGemini from "../../../public/images/gemini.png";
@@ -16,7 +17,7 @@ const Servicios: React.FC = () => {
     return (
         <section className="container mx-auto py-8">
             <h2 className="text-4xl font-semibold mb-4">Nuestros servicios te ofrecen una aplicación impulsada por inteligencia artificial que te ayudará a mejorar tu vida diaria mediante un análisis detallado de tus rutinas.</h2>
-
+            <br /><br /><br />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 {/* Google Gemini: El futuro de la IA conversacional */}
@@ -25,7 +26,6 @@ const Servicios: React.FC = () => {
                     <div className="p-4">
                         <h3 className="text-lg font-semibold mb-2">Google Gemini</h3>
                         <p className="text-gray-600">Experimenta una nueva era de interacción con Google Gemini, un modelo de lenguaje avanzado que ofrece una experiencia conversacional natural y fluida. Descubre cómo puede transformar tu negocio.</p>
-                        <a href="https://cloud.google.com/natural-language/gemini" className="text-blue-500 underline mt-2">Más información</a>
                     </div>
                 </div>
 
@@ -35,7 +35,6 @@ const Servicios: React.FC = () => {
                     <div className="p-4">
                         <h3 className="text-lg font-semibold mb-2">APIs de IA</h3>
                         <p className="text-gray-600">Integra las capacidades de inteligencia artificial en tus aplicaciones y sistemas con las APIs de IA de Google y Chat GPT4. Añade funcionalidades inteligentes, automatiza tareas y obtén información valiosa de tus datos.</p>
-                        <a href="https://cloud.google.com/apis/library/ai" className="text-blue-500 underline mt-2">Más información</a>
                     </div>
                 </div>
                 {/* Potenciar tu negocio con IA */}
