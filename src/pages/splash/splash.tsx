@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import splashImage from '../../../public/images/photo.jpeg';
+import splashImage from '../../../public/images/safari-logo@logotyp.us.svg';
 
 const Splash = () => {
     const router = useRouter();
@@ -24,7 +24,7 @@ const Splash = () => {
 
     return (
         <div
-            className="flex flex-col items-center justify-center h-screen dark:bg-gray-800"
+            className="flex flex-col items-center justify-center h-screen"
         >
             <Image
                 src={splashImage}

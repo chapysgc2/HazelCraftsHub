@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import imagen1 from "../../../public/images/imagenf.jpeg";
-import imagen2 from "../../../public/images/project5.jpeg";
-import imagen3 from "../../../public/images/gemini.png";
-import imagen4 from "../../../public/images/project4.jpg";
+import imagen1 from "../../../public/images/gemini.png";
+import imagen2 from "../../../public/images/openia.jpg";
+import imagen3 from "../../../public/images/setup.jpg";
+import imagen4 from "../../../public/images/background.png";
 
 const images = [
     { src: imagen1, description: 'Description for image 1' },

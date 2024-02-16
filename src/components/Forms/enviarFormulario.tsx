@@ -10,18 +10,15 @@ const EnviarFormulario: React.FC = () => {
     const [cotizacionEnviada, setCotizacionEnviada] = useState(false);
 
     const handleSubmit = async () => {
-        if (typeof window === 'undefined') {
-            // Si se está ejecutando en el servidor
-            try {
-                //const enviarCorreoCotizacion = require('../../api/enviarCorreoCotizacion').default;
-                //await enviarCorreoCotizacion({ nombre, apellidos, email, telefono, proyecto });
-                setCotizacionEnviada(true);
-            } catch (error) {
-                console.error('Error al enviar la cotización:', error);
-            }
-        } else {
-            // Si se está ejecutando en el cliente
-            console.warn('El envío de correo solo está disponible en el lado del servidor.');
+        try {
+            // Simular el envío del formulario (aquí deberías enviarlo al servidor)
+            // Puedes habilitar el código real para enviar el correo si estás en el servidor
+            // Si estás en el cliente, muestra un mensaje de éxito simulado
+            // const enviarCorreoCotizacion = require('../../api/enviarCorreoCotizacion').default;
+            // await enviarCorreoCotizacion({ nombre, apellidos, email, telefono, proyecto });
+            setCotizacionEnviada(true); // Actualizar el estado para mostrar el mensaje de éxito
+        } catch (error) {
+            console.error('Error al enviar la cotización:', error);
         }
     };
 
