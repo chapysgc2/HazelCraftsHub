@@ -13,8 +13,8 @@ const EnviarFormulario: React.FC = () => {
         if (typeof window === 'undefined') {
             // Si se está ejecutando en el servidor
             try {
-                const enviarCorreoCotizacion = require('../../api/enviarCorreoCotizacion').default;
-                await enviarCorreoCotizacion({ nombre, apellidos, email, telefono, proyecto });
+                //const enviarCorreoCotizacion = require('../../api/enviarCorreoCotizacion').default;
+                //await enviarCorreoCotizacion({ nombre, apellidos, email, telefono, proyecto });
                 setCotizacionEnviada(true);
             } catch (error) {
                 console.error('Error al enviar la cotización:', error);

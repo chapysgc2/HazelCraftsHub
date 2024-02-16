@@ -20,7 +20,8 @@ const Carousel: React.FC = () => {
     const goToNextSlide = useCallback(() => {
         const newIndex = (currentIndex + 1) % images.length;
         setCurrentIndex(newIndex);
-    }, [currentIndex, images.length]);
+    }, [currentIndex]);
+
 
     const goToPrevSlide = () => {
         const newIndex = (currentIndex - 1 + images.length) % images.length;
@@ -52,7 +53,7 @@ const Carousel: React.FC = () => {
     useEffect(() => {
         const intervalId = setInterval(goToNextSlide, 3000);
         return () => clearInterval(intervalId);
-    }, [currentIndex, images.length, goToNextSlide]);
+    }, [currentIndex, goToNextSlide]);
 
     return (
         <div id="gallery" className="relative w-full max-w-screen-lg mx-auto" data-carousel="slide">
