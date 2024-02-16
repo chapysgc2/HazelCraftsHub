@@ -10,8 +10,7 @@ const Cotizacion: React.FC = () => {
       <br />
       <br />
       <br />
-      <br />
-      <br />
+
       <br />
       <EnviarFormulario />
       <br />

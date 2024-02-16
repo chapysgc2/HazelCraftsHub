@@ -34,13 +34,8 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="/home/home" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <Image
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
-              width={30}
-              height={100}
-            />
-            <span className={`text-2xl font-semibold whitespace-nowrap ${router.pathname === "/home/home" ? "text-blue-700" : "text-black"}`}>Flowbite</span>
+           
+            <span className={`text-2xl font-semibold whitespace-nowrap ${router.pathname === "/home/home" ? "text-blue-700" : "text-black"}`}>Bite Soft</span>
           </a>
 
           {/* Botón para dispositivos móviles */}

@@ -28,9 +28,6 @@ const SloganWithImage = () => {
       setPrevScrollY(currentScrollY);
     };
 
-
-
-
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -39,20 +36,27 @@ const SloganWithImage = () => {
   }, [prevScrollY]);
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
       <motion.div
-        className="max-w-md flex-shrink-0"
+        className="max-w-md flex-shrink-0 mb-6 md:mb-0"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: isVisible ? 0 : 100, opacity: isVisible ? 1 : 0 }}
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-4xl font-semibold mb-4">Potenciando tu negocio con herramientas digitales</h1>
-        <p className="text-gray-600">Descripción adicional si es necesaria.</p>
-      
+        <p className="text-gray-600 mb-4">
+          Somos una empresa dedicada a proporcionar soluciones digitales innovadoras para potenciar tu negocio.
+          Utilizamos las últimas tecnologías y herramientas para ofrecerte resultados excepcionales.
+
+        </p>
+        <p className="text-gray-600">
+
+          ¡Permítenos ayudarte a destacar en el mundo digital y alcanzar el éxito!
+        </p>
       </motion.div>
-      
+
       <motion.div
-        className="ml-8 rounded-lg overflow-hidden"
+        className="w-full md:w-96 rounded-lg overflow-hidden"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: isVisible ? 0 : -100, opacity: isVisible ? 1 : 0 }}
         transition={{ duration: 0.5 }}
@@ -65,13 +69,7 @@ const SloganWithImage = () => {
           objectFit="cover"
         />
       </motion.div>
-
-      
     </div>
-
-  
-
-    
   );
 };
 

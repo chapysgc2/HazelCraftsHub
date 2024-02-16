@@ -8,6 +8,10 @@ const Contact: React.FC = () => {
         <div>
             <Navbar />
             <br /><br />
+            <br />
+            <br />
+            <br />
+
             <InstagramBio />
             <br />
             <br />
