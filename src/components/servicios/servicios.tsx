@@ -10,8 +10,8 @@ import CreacionPortafoliosDigitales from "../../../public/images/portafolio.jpg"
 import DesarrolloMenusDigitalesRestaurantes from "../../../public/images/movildigital.jpg";
 import DesarrolloTiendasEnLinea from "../../../public/images/paginaweb.jpg";
 import DisenoDesarrolloBlogs from "../../../public/images/blog.jpg";
-import DisenoDesarrolloSistemasCRM from "../../../public/images/gemini.png";
-import ConsultoriaAsesoramientoTecnologico from "../../../public/images/crm.jpg";
+import DisenoDesarrolloSistemasCRM from "../../../public/images/crm.jpg";
+import ConsultoriaAsesoramientoTecnologico from "../../../public/images/diseno.jpg";
 
 const Servicios: React.FC = () => {
     return (
