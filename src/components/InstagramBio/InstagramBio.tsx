@@ -40,7 +40,6 @@ const InstagramBio: React.FC = () => {
                 <div className="mb-4">
                     <h4 className="font-semibold">Desarrollador de aplicaciones móviles - IOS</h4>
                     <p className="italic">Agosto 2023 – Actualmente</p>
-                    <p>Grupo Salina -  Ciudad de México</p>
                 </div>
                 <div className="mb-4">
                     <h4 className="font-semibold">Desarrollador Web</h4>
