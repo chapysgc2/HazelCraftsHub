@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { FiHome, FiSettings, FiDollarSign, FiMail } from 'react-icons/fi';
+import { FaBitcoin } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
   const router = useRouter();
@@ -10,6 +11,7 @@ const Navbar: React.FC = () => {
   const navigateToServices = () => router.push('/services/services');
   const navigateToCotizacion = () => router.push('/cotizacion/cotizacion');
   const navigateToContact = () => router.push('/contact/contact');
+  const navigateToCripto = () => router.push('/cripto/cripto'); // Nuevo para Criptomonedas
 
   return (
       <>
@@ -35,6 +37,9 @@ const Navbar: React.FC = () => {
                 <button onClick={navigateToCotizacion} className={`py-2 px-3 ${router.pathname.startsWith("/cotizacion") ? "text-blue-700" : "text-black"} hover:underline`}>
                   Cotización
                 </button>
+                <button onClick={navigateToCripto} className={`py-2 px-3 ${router.pathname.startsWith("/cripto") ? "text-blue-700" : "text-black"} hover:underline`}>
+                  Criptomonedas
+                </button>
                 <button onClick={navigateToContact} className={`py-2 px-3 ${router.pathname.startsWith("/contact") ? "text-blue-700" : "text-black"} hover:underline`}>
                   Contacto
                 </button>
@@ -57,6 +62,10 @@ const Navbar: React.FC = () => {
             <button onClick={navigateToCotizacion} className={`flex flex-col items-center ${router.pathname.startsWith("/cotizacion") ? "text-blue-700" : "text-black"}`}>
               <FiDollarSign className="w-6 h-6 mb-1" />
               <span className="text-xs">Cotización</span>
+            </button>
+            <button onClick={navigateToCripto} className={`flex flex-col items-center ${router.pathname.startsWith("/cripto") ? "text-blue-700" : "text-black"}`}>
+              <FaBitcoin className="w-6 h-6 mb-1" />
+              <span className="text-xs">Cripto</span>
             </button>
             <button onClick={navigateToContact} className={`flex flex-col items-center ${router.pathname.startsWith("/contact") ? "text-blue-700" : "text-black"}`}>
               <FiMail className="w-6 h-6 mb-1" />
