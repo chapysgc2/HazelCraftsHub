@@ -12,7 +12,7 @@ const ContactLinks: React.FC = () => {
       <a href="https://api.whatsapp.com/send?phone=+529541451671&text=Hello,%20more%20information!" className="mr-4">
         <FaWhatsapp size={24} />
       </a>
-      <a href="https://portafoliohazelalain.netlify.app/" className="mr-4">
+      <a href="https://www.instagram.com/hazel.alain?igsh=bG1kcmNoZjBwc3Vy&utm_source=qr" className="mr-4">
         <FaInstagram size={24} />
       </a>
       <a href="mailto:hazelo235@gmail.com" className="mr-4">
