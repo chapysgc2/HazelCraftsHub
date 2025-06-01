@@ -6,9 +6,7 @@ const Services: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <br />
-      <br />
-      <br />
+   
       <br />
       <br />
       <Servicios />
